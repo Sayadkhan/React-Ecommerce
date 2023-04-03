@@ -30,13 +30,13 @@ const Slider = () => {
     return () => clearInterval(timer);
   }, [currentImage]);
 
-  const goToPrevImage = () => {
-    setCurrentImage((currentImage - 1 + images.length) % images.length);
-  };
+  // const goToPrevImage = () => {
+  //   setCurrentImage((currentImage - 1 + images.length) % images.length);
+  // };
 
-  const goToNextImage = () => {
-    setCurrentImage((currentImage + 1) % images.length);
-  };
+  // const goToNextImage = () => {
+  //   setCurrentImage((currentImage + 1) % images.length);
+  // };
 
   return (
     <div className="container mx-auto pl-5">
@@ -52,20 +52,20 @@ const Slider = () => {
           />
         ))}
         <div className="absolute inset-y-0 left-0 flex items-center">
-          <button
+          {/* <button
             onClick={goToPrevImage}
             className="p-4 text-white bg-black bg-opacity-50 hover:bg-opacity-75 focus:outline-none"
           >
             <AiOutlineLeft className="h-6 w-6" />
-          </button>
+          </button> */}
         </div>
         <div className="absolute inset-y-0 right-0 flex items-center">
-          <button
+          {/* <button
             onClick={goToNextImage}
             className="p-4 text-white bg-black bg-opacity-50 hover:bg-opacity-75 focus:outline-none"
           >
             <AiOutlineRight className="h-6 w-6" />
-          </button>
+          </button> */}
         </div>
       </div>
     </div>
