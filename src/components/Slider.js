@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 
 const images = [
   {
@@ -40,7 +39,7 @@ const Slider = () => {
 
   return (
     <div className="container mx-auto pl-5">
-      <div className="relative h-80">
+      <div className="relative h-96">
         {images.map((image, index) => (
           <img
             key={image.id}
