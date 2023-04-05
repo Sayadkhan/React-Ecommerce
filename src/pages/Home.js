@@ -9,6 +9,7 @@ const Home = () => {
       <HeroSection />
       <PopularCategories />
       <TodaySells />
+      
     </div>
   );
 };

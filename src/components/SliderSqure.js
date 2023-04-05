@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 
 const images = [
   {
@@ -30,13 +29,13 @@ const SliderSqure = () => {
     return () => clearInterval(timer);
   }, [currentImage]);
 
-  const goToPrevImage = () => {
-    setCurrentImage((currentImage - 1 + images.length) % images.length);
-  };
+  // const goToPrevImage = () => {
+  //   setCurrentImage((currentImage - 1 + images.length) % images.length);
+  // };
 
-  const goToNextImage = () => {
-    setCurrentImage((currentImage + 1) % images.length);
-  };
+  // const goToNextImage = () => {
+  //   setCurrentImage((currentImage + 1) % images.length);
+  // };
 
   return (
     <div className="container mx-auto pl-5 w-2/3">

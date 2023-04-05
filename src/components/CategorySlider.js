@@ -24,7 +24,7 @@ const categories = [
 
 const CategorySlider = () => {
   return (
-    <div className="flex container mx-auto">
+    <div className="flex container mx-auto py-3">
       <div className="flex gap-5">
         {categories.map((category) => (
           <div
