@@ -9,10 +9,9 @@ import AllBrands from "./pages/AllBrands";
 import AllOffers from "./pages/AllOffers";
 import MenClothingAndFashion from "./pages/MenClothingAndFashion";
 import Computer from "./pages/Computer";
+import CardHolder from "./components/CardHolder";
 
 const App = () => {
-
-
   return (
     <>
       <Head />
@@ -30,6 +29,8 @@ const App = () => {
           />
           <Route path="/computer" element={<Computer />} />
         </Routes>
+
+        <CardHolder />
       </div>
 
       <Footer />
